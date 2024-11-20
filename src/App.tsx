@@ -1,25 +1,80 @@
 function App() {
   return (
-    <div className="m-auto flex flex-col place-items-center gap-12 h-vh">
-      <nav>
-        <ul className="flex gap-8">
-          <li>hi</li>
-          <li>hi</li>
-          <li>git</li>
-          <li>lol</li>
-        </ul>
-      </nav>
-      <div className="relative -translate-right-1/2 left-1/2">
-        <div className="flex flex-col">
-          <h1 className="text-[24px] font-bold">Animated icons</h1>
-          <p>
-            you favoriate animated icon and save them and download them to
-            reuse.
+    <div className="h-full flex flex-col gap-4 py-16">
+      <div
+        id="header"
+        className="flex flex-row items-center justify-between gap-4 pb-4"
+      >
+        <div className="flex flex-col gap-1">
+          <h1 className="text-2xl font-black">Animated & simple icons</h1>
+          <p className="text-xl font-black text-muted-foreground">
+            Made with simple shapes.
           </p>
         </div>
-        <div className="grid grid-cols-5 gap-4">
-          <Icon />
+        <div className="flex gap-4">
+          <div className="border w-fit p-2 rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-twitter"
+            >
+              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+            </svg>
+          </div>
+          <div className="border w-fit p-2 rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-github"
+            >
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+          </div>
         </div>
+      </div>
+      <div className="grid grid-cols-5 gap-2">
+        <Icon />
+        <Icon />
+        <Icon />
+        <Icon />
+        <Icon />
+        <Icon /> <Icon />
+        <Icon />
+        <Icon />
+        <Icon /> <Icon />
+        <Icon />
+        <Icon />
+        <Icon /> <Icon />
+        <Icon />
+        <Icon />
+        <Icon /> <Icon />
+        <Icon />
+        <Icon />
+        <Icon /> <Icon />
+        <Icon />
+        <Icon />
+        <Icon /> <Icon />
+        <Icon />
+        <Icon />
+        <Icon /> <Icon />
+        <Icon />
+        <Icon />
+        <Icon />
       </div>
     </div>
   );
@@ -29,11 +84,11 @@ export default App;
 
 function Icon() {
   return (
-    <div className="flex flex-col items-center gap-8">
-      <div className="bg-red-50 hover:shadow hover:shadow-red-200 hover:z-10 rounded-lg hover:scale-110 transition duration-700 ease-in-out w-fit border border-red-50 group">
+    <div className="flex items-center gap-8">
+      <div className="bg-red-50 hover:z-10 rounded-lg transition duration-700 ease-in-out w-fit border border-red-50 group">
         <svg
-          width="200"
-          height="200"
+          width="160"
+          height="160"
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -86,29 +141,29 @@ function Icon() {
   );
 }
 
-// function Download() {
-//   return (
-//     <div>
-//       <button className="focus-visible:outline-sky-50 m-auto flex items-center w-[180px] gap-2 text-sm px-4 py-4 bg-white border-1 border-black/10">
-//         <svg
-//           xmlns="http://www.w3.org/2000/svg"
-//           width="20"
-//           height="20"
-//           viewBox="0 0 24 24"
-//           fill="none"
-//           stroke="currentColor"
-//           stroke-width="2"
-//           stroke-linecap="round"
-//           stroke-linejoin="round"
-//           class="lucide lucide-file-down"
-//         >
-//           <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-//           <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-//           <path d="M12 18v-6" />
-//           <path d="m9 15 3 3 3-3" />
-//         </svg>
-//         SVG
-//       </button>
-//     </div>
-//   );
-// }
+function Download() {
+  return (
+    <div>
+      <button className="focus-visible:outline-sky-50 m-auto flex items-center w-[180px] gap-2 text-sm px-4 py-4 bg-white border-1 border-black/10">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-file-down"
+        >
+          <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+          <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+          <path d="M12 18v-6" />
+          <path d="m9 15 3 3 3-3" />
+        </svg>
+        SVG
+      </button>
+    </div>
+  );
+}
