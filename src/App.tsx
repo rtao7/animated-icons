@@ -47,7 +47,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-2">
+      <div className="m-auto grid md:grid-cols-2 lg:grid-cols-5 place-content-stretch gap-2">
         <Icon />
         <Icon />
         <Icon />
