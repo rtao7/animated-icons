@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/rtao7/animated-icons/",
+  "homepage": "https://rtao7.github.io/animated-icons/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
